@@ -2,6 +2,7 @@ import React from 'react';
 
  /**
  * @description Will render an html input with autocomplete to remote api src
+ * @author Marc Rice 
  * @class Autocomplete configured to load from an external json api with structure: [{key: mykey, value: myvalue}]
  * key is visible to the user and value is the selected value
  * @param String src remote url to target
