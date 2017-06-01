@@ -83,6 +83,9 @@
     "tape": "^4.6.3",
     "webpack": "^1.13.3"
   },
+  "peerDependencies": {
+    "react": ">=0.14.7"
+  },
   "directories": {},
   "dist": {
     "shasum": "08593e4ae9ee2d3ae3a706216254e1205fe05a7b",
