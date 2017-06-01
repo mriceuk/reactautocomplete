@@ -82,7 +82,7 @@
   "scripts": {
     "test": "mocha tests/spec.js",
     "prepublish": "npm run build",
-		"build": "babel ./src --out-dir ./build"
+    "build": "babel ./src --out-dir ./build"
   },
-  "version": "0.0.6"
+  "version": "0.0.7"
 }
