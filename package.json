@@ -1,0 +1,19 @@
+{
+  "name": "react-autocomplete-rm",
+  "version": "0.0.1",
+  "description": "React-based autocomplete search for remote apis",
+  "main": "",
+  "scripts": {
+    "test": "mocha tests/spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriceuk/reactautocomplete.git"
+  },
+  "author": "Marc Rice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mriceuk/reactautocomplete/issues"
+  },
+  "homepage": "https://github.com/mriceuk/reactautocomplete#readme"
+}
