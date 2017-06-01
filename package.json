@@ -10,7 +10,6 @@
         "spec": "latest",
         "type": "tag"
       },
-      "/Users/marc/Dropbox/projects/finewinesmarket"
     ]
   ],
   "_from": "react-autocomplete-rm@latest",
@@ -45,7 +44,6 @@
   "_shasum": "13c0c5983b57b396264b6f961b68d2d1f088864b",
   "_shrinkwrap": null,
   "_spec": "react-autocomplete-rm",
-  "_where": "/Users/marc/Dropbox/projects/finewinesmarket",
   "author": {
     "name": "Marc Rice"
   },
