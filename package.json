@@ -10,22 +10,35 @@
         "spec": "latest",
         "type": "tag"
       },
+      "/Users/marc/Dropbox/projects/finewinesmarket"
+    ],
+    [
+      {
+        "raw": "react-autocomplete-rm",
+        "scope": null,
+        "escapedName": "react-autocomplete-rm",
+        "name": "react-autocomplete-rm",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/marc/Desktop/testing"
     ]
   ],
-  "_from": "react-autocomplete-rm@latest",
-  "_id": "react-autocomplete-rm@0.0.4",
+  "_from": "react-autocomplete-rm",
+  "_id": "react-autocomplete-rm@0.0.10",
   "_inCache": true,
   "_location": "/react-autocomplete-rm",
-  "_nodeVersion": "7.3.0",
+  "_nodeVersion": "8.0.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/react-autocomplete-rm-0.0.4.tgz_1496329605819_0.4460495498497039"
+    "tmp": "tmp/react-autocomplete-rm-0.0.10.tgz_1496341169981_0.8539737637620419"
   },
   "_npmUser": {
     "name": "mriceuk",
     "email": "marc@pavie.co.uk"
   },
-  "_npmVersion": "3.10.10",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "react-autocomplete-rm",
@@ -37,13 +50,13 @@
     "type": "tag"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.4.tgz",
-  "_shasum": "13c0c5983b57b396264b6f961b68d2d1f088864b",
+  "_resolved": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.10.tgz",
+  "_shasum": "08593e4ae9ee2d3ae3a706216254e1205fe05a7b",
   "_shrinkwrap": null,
   "_spec": "react-autocomplete-rm",
+  "_where": "/Users/marc/Desktop/testing",
   "author": {
     "name": "Marc Rice"
   },
@@ -72,31 +85,11 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "13c0c5983b57b396264b6f961b68d2d1f088864b",
-    "tarball": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.4.tgz"
+    "shasum": "08593e4ae9ee2d3ae3a706216254e1205fe05a7b",
+    "tarball": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.10.tgz"
   },
   "gitHead": "cd5389c201d93d9c48068dc821276742f0fecc2b",
   "homepage": "https://github.com/mriceuk/reactautocomplete#readme",
-  "license": "ISC",
-  "main": "build/autocomplete.js",
-  "maintainers": [
-    {
-      "name": "mriceuk",
-      "email": "marc@pavie.co.uk"
-    }
-  ],
-  "name": "react-autocomplete-rm",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mriceuk/reactautocomplete.git"
-  },
-  "scripts": {
-    "test": "mocha tests/spec.js",
-    "prepublish": "npm run build",
-    "build": "babel ./src --out-dir ./build"
-  },
   "keywords": [
     "javascript",
     "react",
@@ -115,5 +108,25 @@
     "searchbox",
     "search-box"
   ],
+  "license": "ISC",
+  "main": "build/autocomplete.js",
+  "maintainers": [
+    {
+      "name": "mriceuk",
+      "email": "marc@pavie.co.uk"
+    }
+  ],
+  "name": "react-autocomplete-rm",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriceuk/reactautocomplete.git"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./build",
+    "prepublish": "npm run build",
+    "test": "mocha tests/spec.js"
+  },
   "version": "0.0.10"
 }
