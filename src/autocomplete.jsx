@@ -9,7 +9,7 @@
  */
 
 import React from 'react'; 
-var PureRenderMixin = require('react/lib/ReactComponentWithPureRenderMixin');
+
 
 
 class Autocomplete extends React.Component {

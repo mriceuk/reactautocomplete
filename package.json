@@ -84,5 +84,5 @@
     "prepublish": "npm run build",
 		"build": "babel ./src --out-dir ./build"
   },
-  "version": "0.0.5"
+  "version": "0.0.6"
 }
