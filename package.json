@@ -1,19 +1,88 @@
 {
-  "name": "react-autocomplete-rm",
-  "version": "0.0.2",
-  "description": "React-based autocomplete search for remote apis",
-  "main": "src/autocomplete.js",
-  "scripts": {
-    "test": "mocha tests/spec.js"
+  "_args": [
+    [
+      {
+        "raw": "react-autocomplete-rm",
+        "scope": null,
+        "escapedName": "react-autocomplete-rm",
+        "name": "react-autocomplete-rm",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/marc/Dropbox/projects/finewinesmarket"
+    ]
+  ],
+  "_from": "react-autocomplete-rm@latest",
+  "_id": "react-autocomplete-rm@0.0.4",
+  "_inCache": true,
+  "_location": "/react-autocomplete-rm",
+  "_nodeVersion": "7.3.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-autocomplete-rm-0.0.4.tgz_1496329605819_0.4460495498497039"
   },
+  "_npmUser": {
+    "name": "mriceuk",
+    "email": "marc@pavie.co.uk"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-autocomplete-rm",
+    "scope": null,
+    "escapedName": "react-autocomplete-rm",
+    "name": "react-autocomplete-rm",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.4.tgz",
+  "_shasum": "13c0c5983b57b396264b6f961b68d2d1f088864b",
+  "_shrinkwrap": null,
+  "_spec": "react-autocomplete-rm",
+  "_where": "/Users/marc/Dropbox/projects/finewinesmarket",
+  "author": {
+    "name": "Marc Rice"
+  },
+  "bugs": {
+    "url": "https://github.com/mriceuk/reactautocomplete/issues"
+  },
+  "dependencies": {},
+  "description": "React-based autocomplete search for remote apis",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "13c0c5983b57b396264b6f961b68d2d1f088864b",
+    "tarball": "https://registry.npmjs.org/react-autocomplete-rm/-/react-autocomplete-rm-0.0.4.tgz"
+  },
+  "gitHead": "cd5389c201d93d9c48068dc821276742f0fecc2b",
+  "homepage": "https://github.com/mriceuk/reactautocomplete#readme",
+  "license": "ISC",
+  "main": "build/autocomplete.js",
+  "maintainers": [
+    {
+      "name": "mriceuk",
+      "email": "marc@pavie.co.uk"
+    }
+  ],
+  "name": "react-autocomplete-rm",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mriceuk/reactautocomplete.git"
   },
-  "author": "Marc Rice",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mriceuk/reactautocomplete/issues"
+  "scripts": {
+    "test": "mocha tests/spec.js",
+    "prepublish": "npm run build",
+		"build": "babel ./src --out-dir ./build"
   },
-  "homepage": "https://github.com/mriceuk/reactautocomplete#readme"
+  "version": "0.0.5"
 }
