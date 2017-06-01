@@ -11,15 +11,15 @@
 
 var React = require('react');
 
-
-class Autocomplete extends React.Component {
+export class Autocomplete extends React.Component {
 
 
 	componentDidMount() {
 		
 		//avoid crashing servers with a minLength property
 		this.optionalMinLength = this.props.minLength || null; 
-
+		this.submitBtn = this.props.submitBtn || false; 
+		
   }
   
   handleChange( url ) {
@@ -77,17 +77,27 @@ class Autocomplete extends React.Component {
 				}
 				
 	}
+	
+
 
   render() {
 			
+			let submitBtnEl = null;
+			console.log(this.submitBtn);
+			if (this.submitBtn !== false) {
+				submitBtnEl = <button className="autocomplete-submit">{this.submitBtn}</button>;
+			}
 	
-  		return (<div className="autocomplete-box"><input type="text" onChange={ this.handleChange.bind(this) } className="autocomplete"/><div className="autocomplete-results"/></div>);
+  		return (<div className="autocomplete-box"><input type="text" onChange={ this.handleChange.bind(this) } className="autocomplete"/><div className="autocomplete-results"/>{submitBtnEl}</div>);
   		
-  		
+  		  		
   		
   }
   
   
 }
+
+
+
 
 module.exports = Autocomplete;
