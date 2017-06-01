@@ -8,9 +8,7 @@
  * @return HTML autocompleteinput
  */
 
-import React from 'react'; 
-
-
+var React = require('react');
 
 class Autocomplete extends React.Component {
 
