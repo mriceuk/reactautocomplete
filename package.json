@@ -128,5 +128,5 @@
     "prepublish": "npm run build",
     "test": "mocha tests/spec.js"
   },
-  "version": "0.0.10"
+  "version": "0.0.12"
 }
