@@ -9,7 +9,7 @@
  */
 
 
-var react = require('react');
+var React = require('react');
 
 
 class Autocomplete extends React.Component {
