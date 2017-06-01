@@ -1,7 +1,4 @@
-//import React from 'react'; 
-var React = require('react');
-var PureRenderMixin = require('react/lib/ReactComponentWithPureRenderMixin');
- /**
+/*
  * @description Will render an html input with autocomplete to remote api src
  * @author Marc Rice 
  * @class Autocomplete configured to load from an external json api with structure: [{key: mykey, value: myvalue}]
@@ -9,7 +6,11 @@ var PureRenderMixin = require('react/lib/ReactComponentWithPureRenderMixin');
  * @param String src remote url to target
  * @param Integer minLength 
  * @return HTML autocompleteinput
-*/
+ */
+
+import React from 'react'; 
+var PureRenderMixin = require('react/lib/ReactComponentWithPureRenderMixin');
+
 
 class Autocomplete extends React.Component {
 
