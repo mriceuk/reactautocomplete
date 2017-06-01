@@ -83,6 +83,42 @@
     "test": "mocha tests/spec.js",
     "prepublish": "npm run build",
     "build": "babel ./src --out-dir ./build"
+  },  
+  "keywords": [
+    "javascript",
+    "react",
+    "reactjs",
+    "react-component",
+    "autocomplete",
+    "search autocomplete",
+    "auto complete",
+    "search",
+    "react-search",
+    "react search",
+    "react-search-box",
+    "react searchbox",
+    "react search box",
+    "search control",
+    "searchbox",
+    "search-box"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "enzyme": "^2.6.0",
+    "expect": "^1.20.2",
+    "express": "^4.14.0",
+    "jsdom": "^9.8.3",
+    "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "tape": "^4.6.3",
+    "webpack": "^1.13.3"
   },
   "version": "0.0.7"
 }

@@ -22,8 +22,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * @return HTML autocompleteinput
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
-var PureRenderMixin = require('react/lib/ReactComponentWithPureRenderMixin');
-
 var Autocomplete = function (_React$Component) {
 	_inherits(Autocomplete, _React$Component);
 
