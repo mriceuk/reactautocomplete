@@ -11,15 +11,15 @@
 
 var React = require('react');
 
-export class Autocomplete extends React.Component {
+class Autocomplete extends React.Component {
 
-
-	componentDidMount() {
+	constructor(props) {
 		
-		//avoid crashing servers with a minLength property
+		super(props);
+		
+		//set a minimum length or defaults to 0
 		this.optionalMinLength = this.props.minLength || null; 
-		this.submitBtn = this.props.submitBtn || false; 
-		
+
   }
   
   handleChange( url ) {
@@ -65,8 +65,7 @@ export class Autocomplete extends React.Component {
 					  }
 					};
 					
-					request.onerror = function() {
-							//TODO: replace with styled dialog boxes https://github.com/reactjs/react-modal
+					request.onerror = function() { 
 							console.log('connection failed');
 					};
 					
@@ -78,26 +77,46 @@ export class Autocomplete extends React.Component {
 				
 	}
 	
+	/*
+	* Submit function in JS by default loads the t */
+	handleSubmit(e) {
+		e.preventDefault();
+		
+		//this.props.submitFunction;
+		//alert('asdas');
+		
+	}
 
 
   render() {
-			
+
+
 			let submitBtnEl = null;
-			console.log(this.submitBtn);
-			if (this.submitBtn !== false) {
-				submitBtnEl = <button className="autocomplete-submit">{this.submitBtn}</button>;
-			}
+			let WrapTag = 'div';
+			let Action = null;
+			let Method = null;
 	
-  		return (<div className="autocomplete-box"><input type="text" onChange={ this.handleChange.bind(this) } className="autocomplete"/><div className="autocomplete-results"/>{submitBtnEl}</div>);
-  		
-  		  		
+			//display optional submit button + form, if submitBtn is part of props
+			if (this.props.submitBtn) {
+				
+				submitBtnEl = <input type="submit" className="autocomplete-submit" value={this.props.submitBtn} />;
+				WrapTag = 'form';
+				Action = this.props.action;
+				Method = this.props.method;
+
+			}
+			
+  		return (<WrapTag className={"autocomplete-"+WrapTag} action={Action} method={Method}>
+				<div className="autocomplete-box">
+					<input name="q" type="text" onChange={ this.handleChange.bind(this) } className="autocomplete"  autoComplete="off"/>
+					<div className="autocomplete-results"/>
+				</div>
+				{submitBtnEl}
+			</WrapTag>); 
   		
   }
-  
-  
+    
 }
-
-
 
 
 module.exports = Autocomplete;

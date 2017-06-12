@@ -1,5 +1,9 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20,7 +24,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = require('react');
 
-var Autocomplete = function (_React$Component) {
+var Autocomplete = exports.Autocomplete = function (_React$Component) {
 	_inherits(Autocomplete, _React$Component);
 
 	function Autocomplete() {
@@ -35,6 +39,7 @@ var Autocomplete = function (_React$Component) {
 
 			//avoid crashing servers with a minLength property
 			this.optionalMinLength = this.props.minLength || null;
+			this.submitBtn = this.props.submitBtn || false;
 		}
 	}, {
 		key: 'handleChange',
@@ -77,7 +82,7 @@ var Autocomplete = function (_React$Component) {
 				};
 
 				request.onerror = function () {
-					//TODO: replace with styled dialog boxes https://github.com/reactjs/react-modal
+					//TODO: replace with styled dialog boxes 
 					console.log('connection failed');
 				};
 
@@ -91,11 +96,22 @@ var Autocomplete = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 
+			var submitBtnEl = null;
+			console.log(this.submitBtn);
+			if (this.submitBtn !== false) {
+				submitBtnEl = React.createElement(
+					'button',
+					{ className: 'autocomplete-submit' },
+					this.submitBtn
+				);
+			}
+
 			return React.createElement(
 				'div',
 				{ className: 'autocomplete-box' },
 				React.createElement('input', { type: 'text', onChange: this.handleChange.bind(this), className: 'autocomplete' }),
-				React.createElement('div', { className: 'autocomplete-results' })
+				React.createElement('div', { className: 'autocomplete-results' }),
+				submitBtnEl
 			);
 		}
 	}]);
