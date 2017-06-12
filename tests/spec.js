@@ -52,7 +52,6 @@ describe('Autocomplete', () => {
    it('does not contain a button if submitBtn is empty', () => {
 
 	 		const wrapper = shallow(<Autocomplete submitBtn=''/>);
-	 		console.log(wrapper.html());
 	 		expect(wrapper.html()).to.not.contain('<input type="submit" ');
 
   });
